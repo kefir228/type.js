@@ -11,13 +11,13 @@ console.log(`Мінімальне значення: ${min}`);
 const sum = phone + computer + headphone;
 console.log(`Сума: ${sum}`);
 
-const sumFloor = Math.floor(sum)
+const sumFloor = Math.floor(phone) + Math.floor(computer) + Math.floor(headphone)
 console.log(`Сума без копійок: ${sumFloor}`);
 
 const sumFloorMin = Math.floor((sum)/100)*100
 console.log(`Округлення в меншу сторону: ${sumFloorMin}`);
 
-const sumFloorMax = Math.ceil((sum)/100)*100
+const sumFloorMax = Math.round((sum)/100)*100
 console.log(`Сума округлена до сотень: ${sumFloorMax}`);
 
 if (Math.floor(sum) % 2 == 0) {
